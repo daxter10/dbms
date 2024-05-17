@@ -610,4 +610,175 @@ Society name Mentor name Total Capacity Total Enrolled Unfilled Seats
    - A VLAN partitions a physical network into multiple logical networks, improving security, reducing broadcast traffic, and simplifying management.
 
 2.
+
+
+
+
+
+
+### Basics of Computer Networks
+
+1. **What is a computer network?**
+   - A computer network is a group of interconnected devices that can communicate and share resources such as files, printers, and internet connections.
+
+2. **What are the different types of networks?**
+   - **LAN (Local Area Network):** A network confined to a small geographic area, like a single building.
+   - **MAN (Metropolitan Area Network):** Spans a city or a large campus.
+   - **WAN (Wide Area Network):** Covers a broad area, such as multiple cities or countries.
+   - **PAN (Personal Area Network):** A small network for personal devices, like Bluetooth connections.
+
+3. **Define the terms: bandwidth, latency, and throughput.**
+   - **Bandwidth:** The maximum rate of data transfer across a network path.
+   - **Latency:** The time it takes for data to travel from the source to the destination.
+   - **Throughput:** The actual rate at which data is successfully transferred over the network.
+
+4. **What is the difference between a hub, a switch, and a router?**
+   - **Hub:** A basic networking device that broadcasts data to all devices in a network segment.
+   - **Switch:** A device that forwards data only to the specific device(s) intended, based on MAC addresses.
+   - **Router:** A device that routes data between different networks, typically using IP addresses.
+
+5. **Explain the OSI model and its layers.**
+   - **OSI (Open Systems Interconnection) Model:** A conceptual framework used to understand and implement standard protocols in networking, consisting of seven layers:
+     1. Physical
+     2. Data Link
+     3. Network
+     4. Transport
+     5. Session
+     6. Presentation
+     7. Application
+
+6. **What is the TCP/IP model and how does it differ from the OSI model?**
+   - **TCP/IP Model:** A four-layered suite of protocols that governs the internet and similar networks:
+     1. Link
+     2. Internet
+     3. Transport
+     4. Application
+   - **Difference:** The OSI model is a theoretical model with seven layers, while the TCP/IP model is a practical framework with four layers, designed specifically for real-world networking.
+
+### Network Topologies
+
+1. **What are the different types of network topologies?**
+   - **Star:** All devices are connected to a central hub.
+   - **Ring:** Each device is connected to two other devices, forming a circular pathway.
+   - **Bus:** All devices share a single communication line or cable.
+   - **Mesh:** Devices are interconnected with many redundant interconnections.
+   - **Tree:** A combination of star and bus topologies with hierarchical connections.
+   - **Hybrid:** A mix of two or more different types of topologies.
+
+2. **What are the advantages and disadvantages of a mesh topology?**
+   - **Advantages:** High redundancy and reliability, failure of one link doesn't affect the network.
+   - **Disadvantages:** High cost and complexity of installation and maintenance.
+
+### Network Devices
+
+1. **What is a network interface card (NIC)?**
+   - A hardware component that connects a computer to a network.
+
+2. **Explain the role of a modem in a network.**
+   - A modem (modulator-demodulator) converts digital data from a computer into an analog signal for transmission over telephone lines and vice versa.
+
+3. **What is a firewall and how does it work?**
+   - A firewall is a security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules, acting as a barrier between a trusted network and untrusted networks.
+
+4. **What is the purpose of a DNS server?**
+   - A DNS (Domain Name System) server translates domain names (like www.example.com) into IP addresses that computers use to identify each other on the network.
+
+### IP Addressing and Subnetting
+
+1. **What is an IP address?**
+   - An IP (Internet Protocol) address is a unique identifier assigned to each device connected to a network, used for addressing and routing data.
+
+2. **Differentiate between IPv4 and IPv6.**
+   - **IPv4:** Uses 32-bit addresses, allowing for about 4.3 billion unique addresses.
+   - **IPv6:** Uses 128-bit addresses, allowing for a vastly larger number of unique addresses (approximately 340 undecillion).
+
+3. **Explain the concept of subnetting.**
+   - Subnetting divides a larger network into smaller, more manageable subnetworks, which can improve performance and security.
+
+4. **What is a subnet mask?**
+   - A subnet mask is a 32-bit number that divides an IP address into network and host portions.
+
+5. **How do you calculate the number of subnets and hosts per subnet?**
+   - Number of subnets: \( 2^n \) where \( n \) is the number of bits borrowed for subnetting.
+   - Number of hosts per subnet: \( 2^m - 2 \) where \( m \) is the number of bits left for host addresses.
+
+### Protocols
+
+1. **What are network protocols?**
+   - Network protocols are standardized rules for formatting and processing data across a network.
+
+2. **Explain the functions of TCP and UDP.**
+   - **TCP (Transmission Control Protocol):** Ensures reliable, ordered, and error-checked delivery of data.
+   - **UDP (User Datagram Protocol):** Provides a connectionless, lightweight, and faster data transfer without guaranteed delivery.
+
+3. **What is the difference between HTTP and HTTPS?**
+   - **HTTP (HyperText Transfer Protocol):** Used for transferring web pages over the internet, not secure.
+   - **HTTPS (HTTP Secure):** HTTP with encryption (SSL/TLS) for secure communication over the internet.
+
+4. **Describe the DHCP process.**
+   - **DHCP (Dynamic Host Configuration Protocol):** Automatically assigns IP addresses and other network configuration parameters to devices. The process involves:
+     1. Discovery: Client broadcasts a DHCPDISCOVER message.
+     2. Offer: Server responds with a DHCPOFFER.
+     3. Request: Client requests the offered address with a DHCPREQUEST.
+     4. Acknowledge: Server sends a DHCPACK to confirm.
+
+5. **What is the purpose of ICMP?**
+   - **ICMP (Internet Control Message Protocol):** Used for sending error messages and operational information, such as unreachable hosts or network diagnostics (e.g., ping).
+
+### Wireless Networking
+
+1. **What is Wi-Fi and how does it work?**
+   - Wi-Fi is a wireless networking technology that allows devices to connect to a network using radio waves. It operates within the IEEE 802.11 standards.
+
+2. **What are the different Wi-Fi standards?**
+   - IEEE 802.11a, 802.11b, 802.11g, 802.11n, 802.11ac, 802.11ax.
+
+3. **What is the difference between 2.4 GHz and 5 GHz Wi-Fi frequencies?**
+   - **2.4 GHz:** Longer range, more interference, fewer channels.
+   - **5 GHz:** Shorter range, less interference, more channels, faster speeds.
+
+### Network Security
+
+1. **What are the common types of network security attacks?**
+   - **Phishing:** Fraudulent attempts to obtain sensitive information.
+   - **DDoS (Distributed Denial of Service):** Overloading a network/service to make it unavailable.
+   - **Man-in-the-Middle:** Intercepting communication between two parties.
+
+2. **What is encryption and why is it important?**
+   - Encryption transforms data into a coded format to prevent unauthorized access, ensuring confidentiality and data integrity.
+
+3. **Explain the concept of a VPN (Virtual Private Network).**
+   - A VPN creates a secure, encrypted connection over a less secure network, such as the internet, to protect data and privacy.
+
+### Network Configuration and Management
+
+1. **What is a MAC address?**
+   - A MAC (Media Access Control) address is a unique identifier assigned to a network interface card (NIC) for communications at the data link layer.
+
+2. **How does NAT (Network Address Translation) work?**
+   - NAT translates private IP addresses within a local network to a public IP address for internet communication and vice versa, enabling multiple devices to share a single public IP.
+
+3. **What is port forwarding?**
+   - Port forwarding directs external network traffic to a specific internal IP address and port within a local network.
+
+4. **Explain the process of packet switching.**
+   - Packet switching divides data into packets that are sent independently over the network and reassembled at the destination, improving network efficiency and resilience.
+
+### Hands-On Questions
+
+1. **Can you configure a basic IP addressing scheme for a small network?**
+   - Example: Assign IP addresses within the range 192.168.1.2 to 192.168.1.254 with a subnet mask of 255.255.255.0.
+
+2. **Demonstrate how to set up a secure Wi-Fi network.**
+   - Configure the router to use WPA3 encryption, set a strong password, disable WPS, and change the default SSID and admin credentials.
+
+3. **Show how to use Wireshark to capture and analyze network traffic.**
+   - Open Wireshark, select the appropriate network interface, start the capture, filter traffic based on protocols or IP addresses, and analyze the packet details for troubleshooting.
+
+### Advanced Topics
+
+1. **Explain VLAN (Virtual LAN) and its advantages.**
+   - A VLAN partitions a physical network into multiple logical networks, improving security, reducing broadcast traffic, and simplifying management.
+
+2.
 """
